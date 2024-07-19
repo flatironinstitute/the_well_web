@@ -1,0 +1,17 @@
+site_name: polymathic -- the Well
+theme:
+  name: material
+  custom_dir: docs/overrides
+  extra_css:
+    - css/extra.css
+
+nav:
+  - Home: index.md
+  - Additional Pages:
+      - Page template: additional-pages/page-template.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true

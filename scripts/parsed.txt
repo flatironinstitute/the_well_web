@@ -1,0 +1,496 @@
+bad line ./all_gifs.txt
+
+
+SIMULATION:: 'rayleigh_taylor_instability'
+:: 0
+
+GifInfo(
+    path = ./rayleigh_taylor_instability/rayleigh_taylor_instability_At_75.hdf5/rayleigh_taylor_instability-f4-density-c0/rayleigh_taylor_instability-f4-density-s1-c0.gif,
+    sim = rayleigh_taylor_instability,
+    field = density,
+    hdf = rayleigh_taylor_instability_At_75.hdf5,
+    file_num = 4,
+    slice_num = 1,
+    cond = 0,
+    field_type = ???,
+    field_dim = n/a
+    )
+
+:: 1
+
+GifInfo(
+    path = ./rayleigh_taylor_instability/rayleigh_taylor_instability_At_75.hdf5/rayleigh_taylor_instability-f4-density-c1/rayleigh_taylor_instability-f4-density-s1-c1.gif,
+    sim = rayleigh_taylor_instability,
+    field = density,
+    hdf = rayleigh_taylor_instability_At_75.hdf5,
+    file_num = 4,
+    slice_num = 1,
+    cond = 1,
+    field_type = ???,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'turbulence_gravity_cooling'
+:: 0
+
+GifInfo(
+    path = ./turbulence_gravity_cooling/turbulence_gravity_cooling_rho0_0.445_Z_0_T0_1000.hdf5/turbulence_gravity_cooling-f5-temperature-c0/turbulence_gravity_cooling-f5-temperature-s3-c0.gif,
+    sim = turbulence_gravity_cooling,
+    field = temperature,
+    hdf = turbulence_gravity_cooling_rho0_0.445_Z_0_T0_1000.hdf5,
+    file_num = 5,
+    slice_num = 3,
+    cond = 0,
+    field_type = ???,
+    field_dim = n/a
+    )
+
+
+GifInfo(
+    path = ./turbulence_gravity_cooling/turbulence_gravity_cooling_rho0_0.445_Z_0.1_T0_10.hdf5/turbulence_gravity_cooling-f0-density-c0/turbulence_gravity_cooling-f0-density-s2-c0.gif,
+    sim = turbulence_gravity_cooling,
+    field = density,
+    hdf = turbulence_gravity_cooling_rho0_0.445_Z_0.1_T0_10.hdf5,
+    file_num = 0,
+    slice_num = 2,
+    cond = 0,
+    field_type = ???,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'turbulent_radiative_layer_3D'
+:: 0
+
+GifInfo(
+    path = ./turbulent_radiative_layer_3D/turbulent_radiative_layer_tcool_0.06.hdf5/turbulent_radiative_layer_3D-f1-density-c0/turbulent_radiative_layer_3D-f1-density-s1-c0.gif,
+    sim = turbulent_radiative_layer_3D,
+    field = density,
+    hdf = turbulent_radiative_layer_tcool_0.06.hdf5,
+    file_num = 1,
+    slice_num = 1,
+    cond = 0,
+    field_type = ???,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'acoustic_scattering_maze_2d'
+:: 0
+
+GifInfo(
+    path = ./acoustic_scattering_maze_2d/acoustic_scattering_maze_2d_chunk_10.hdf5/acoustic_scattering_maze_2d-f2-t201-pressure-c0.gif,
+    sim = acoustic_scattering_maze_2d,
+    field = pressure,
+    hdf = acoustic_scattering_maze_2d_chunk_10.hdf5,
+    file_num = 2,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 201,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'helmholtz_staircase'
+:: 0
+
+GifInfo(
+    path = ./helmholtz_staircase/helmholtz_staircase_omega_02.hdf5/helmholtz_staircase-f1-t0-pressure_im-c0.gif,
+    sim = helmholtz_staircase,
+    field = pressure_im,
+    hdf = helmholtz_staircase_omega_02.hdf5,
+    file_num = 1,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+GifInfo(
+    path = ./helmholtz_staircase/helmholtz_staircase_omega_20.hdf5/helmholtz_staircase-f11-t49-pressure_re-c0.gif,
+    sim = helmholtz_staircase,
+    field = pressure_re,
+    hdf = helmholtz_staircase_omega_20.hdf5,
+    file_num = 11,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 49,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'active_matter'
+:: 0
+
+GifInfo(
+    path = ./active_matter/active_matter_L_10.0_zeta_1.0_alpha_-1.0.hdf5/active_matter-f0-t2-E-d(0,1)-c0.gif,
+    sim = active_matter,
+    field = E,
+    hdf = active_matter_L_10.0_zeta_1.0_alpha_-1.0.hdf5,
+    file_num = 0,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 2,
+    field_dim = (0,1)
+    )
+
+
+GifInfo(
+    path = ./active_matter/active_matter_L_10.0_zeta_1.0_alpha_-1.0.hdf5/active_matter-f0-t1-velocity-d1-c0.gif,
+    sim = active_matter,
+    field = velocity,
+    hdf = active_matter_L_10.0_zeta_1.0_alpha_-1.0.hdf5,
+    file_num = 0,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 1,
+    field_dim = 1
+    )
+
+
+GifInfo(
+    path = ./active_matter/active_matter_L_10.0_zeta_1.0_alpha_-1.0.hdf5/active_matter-f0-t2-D-d(0,0)-c0.gif,
+    sim = active_matter,
+    field = D,
+    hdf = active_matter_L_10.0_zeta_1.0_alpha_-1.0.hdf5,
+    file_num = 0,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 2,
+    field_dim = (0,0)
+    )
+
+
+GifInfo(
+    path = ./active_matter/active_matter_L_10.0_zeta_1.0_alpha_-1.0.hdf5/active_matter-f0-t0-concentration-c0.gif,
+    sim = active_matter,
+    field = concentration,
+    hdf = active_matter_L_10.0_zeta_1.0_alpha_-1.0.hdf5,
+    file_num = 0,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'MHD_256'
+:: 0
+
+GifInfo(
+    path = ./MHD_256/MHDMa_0.7_Ms_0.5.hdf5/MHD_256-f0-density-c0/MHD_256-f0-density-s2-c0.gif,
+    sim = MHD_256,
+    field = density,
+    hdf = MHDMa_0.7_Ms_0.5.hdf5,
+    file_num = 0,
+    slice_num = 2,
+    cond = 0,
+    field_type = ???,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'supernova_explosion_128'
+:: 0
+
+GifInfo(
+    path = ./supernova_explosion_128/supernova_explosion_Msun_0.1_dim128_file_00.hdf5/supernova_explosion_128-f0-temperature-c0/supernova_explosion_128-f0-temperature-s4-c0.gif,
+    sim = supernova_explosion_128,
+    field = temperature,
+    hdf = supernova_explosion_Msun_0.1_dim128_file_00.hdf5,
+    file_num = 0,
+    slice_num = 4,
+    cond = 0,
+    field_type = ???,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'post_neutron_star_merger'
+:: 0
+
+GifInfo(
+    path = ./post_neutron_star_merger/post_neutron_star_merger_scenario_3.hdf5/post_neutron_star_merger-f1-electron_fraction-c0/post_neutron_star_merger-f1-electron_fraction-s2-c0.gif,
+    sim = post_neutron_star_merger,
+    field = electron_fraction,
+    hdf = post_neutron_star_merger_scenario_3.hdf5,
+    file_num = 1,
+    slice_num = 2,
+    cond = 0,
+    field_type = ???,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'pattern_formation'
+:: 0
+
+GifInfo(
+    path = ./pattern_formation/pattern_formation_worms_F_0.058_k_0.065.hdf5/pattern_formation-f5-t0-B-c0.gif,
+    sim = pattern_formation,
+    field = B,
+    hdf = pattern_formation_worms_F_0.058_k_0.065.hdf5,
+    file_num = 5,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+GifInfo(
+    path = ./pattern_formation/pattern_formation_worms_F_0.058_k_0.065.hdf5/pattern_formation-f5-t0-A-c0.gif,
+    sim = pattern_formation,
+    field = A,
+    hdf = pattern_formation_worms_F_0.058_k_0.065.hdf5,
+    file_num = 5,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'shear_flow'
+:: 0
+
+GifInfo(
+    path = ./shear_flow/shear_flow_Reynolds_1e4_Schmidt_5e-1.hdf5/shear_flow-f5-t0-tracer-c0.gif,
+    sim = shear_flow,
+    field = tracer,
+    hdf = shear_flow_Reynolds_1e4_Schmidt_5e-1.hdf5,
+    file_num = 5,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+GifInfo(
+    path = ./shear_flow/shear_flow_Reynolds_1e4_Schmidt_5e-1.hdf5/shear_flow-f5-t0-pressure-c0.gif,
+    sim = shear_flow,
+    field = pressure,
+    hdf = shear_flow_Reynolds_1e4_Schmidt_5e-1.hdf5,
+    file_num = 5,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'euler_quadrants'
+:: 0
+
+GifInfo(
+    path = ./euler_quadrants/euler_quadrants_gamma_1.13_C3H8_16.0_periodic.hdf5/euler_quadrants-f1-t1-momentum-d0-c0.gif,
+    sim = euler_quadrants,
+    field = momentum,
+    hdf = euler_quadrants_gamma_1.13_C3H8_16.0_periodic.hdf5,
+    file_num = 1,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 1,
+    field_dim = 0
+    )
+
+
+GifInfo(
+    path = ./euler_quadrants/euler_quadrants_gamma_1.13_C3H8_16.0_periodic.hdf5/euler_quadrants-f1-t0-pressure-c0.gif,
+    sim = euler_quadrants,
+    field = pressure,
+    hdf = euler_quadrants_gamma_1.13_C3H8_16.0_periodic.hdf5,
+    file_num = 1,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+GifInfo(
+    path = ./euler_quadrants/euler_quadrants_gamma_1.13_C3H8_16.0_periodic.hdf5/euler_quadrants-f1-t0-density-c0.gif,
+    sim = euler_quadrants,
+    field = density,
+    hdf = euler_quadrants_gamma_1.13_C3H8_16.0_periodic.hdf5,
+    file_num = 1,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+GifInfo(
+    path = ./euler_quadrants/euler_quadrants_gamma_1.13_C3H8_16.0_periodic.hdf5/euler_quadrants-f1-t0-energy-c0.gif,
+    sim = euler_quadrants,
+    field = energy,
+    hdf = euler_quadrants_gamma_1.13_C3H8_16.0_periodic.hdf5,
+    file_num = 1,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'rayleigh_benard'
+:: 0
+
+GifInfo(
+    path = ./rayleigh_benard/rayleigh_benard_Rayleigh_1e6_Prandtl_2.hdf5/rayleigh_benard-f10-t0-buoyancy-c0.gif,
+    sim = rayleigh_benard,
+    field = buoyancy,
+    hdf = rayleigh_benard_Rayleigh_1e6_Prandtl_2.hdf5,
+    file_num = 10,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'planetswe'
+:: 0
+
+GifInfo(
+    path = ./planetswe/planetswe_IC00_s3.hdf5/planetswe-f2-t1-velocity-d0-c0.gif,
+    sim = planetswe,
+    field = velocity,
+    hdf = planetswe_IC00_s3.hdf5,
+    file_num = 2,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 1,
+    field_dim = 0
+    )
+
+
+SIMULATION:: 'convective_envelope_rsg'
+:: 0
+
+GifInfo(
+    path = ./convective_envelope_rsg/convective_envelope_rsg_trajectories_1.hdf5/convective_envelope_rsg-f1-density-c0/convective_envelope_rsg-f1-density-s3-c0.gif,
+    sim = convective_envelope_rsg,
+    field = density,
+    hdf = convective_envelope_rsg_trajectories_1.hdf5,
+    file_num = 1,
+    slice_num = 3,
+    cond = 0,
+    field_type = ???,
+    field_dim = n/a
+    )
+
+
+GifInfo(
+    path = ./convective_envelope_rsg/convective_envelope_rsg_trajectories_10.hdf5/convective_envelope_rsg-f2-energy-c0/convective_envelope_rsg-f2-energy-s3-c0.gif,
+    sim = convective_envelope_rsg,
+    field = energy,
+    hdf = convective_envelope_rsg_trajectories_10.hdf5,
+    file_num = 2,
+    slice_num = 3,
+    cond = 0,
+    field_type = ???,
+    field_dim = n/a
+    )
+
+
+SIMULATION:: 'viscoelastic_instability'
+:: 0
+
+GifInfo(
+    path = ./viscoelastic_instability/viscoelastic_instability_AH.hdf5/viscoelastic_instability-f0-t0-pressure-c0.gif,
+    sim = viscoelastic_instability,
+    field = pressure,
+    hdf = viscoelastic_instability_AH.hdf5,
+    file_num = 0,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+GifInfo(
+    path = ./viscoelastic_instability/viscoelastic_instability_AH.hdf5/viscoelastic_instability-f0-t0-c_zz-c0.gif,
+    sim = viscoelastic_instability,
+    field = c_zz,
+    hdf = viscoelastic_instability_AH.hdf5,
+    file_num = 0,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+GifInfo(
+    path = ./viscoelastic_instability/viscoelastic_instability_AH.hdf5/viscoelastic_instability-f0-t1-velocity-d0-c0.gif,
+    sim = viscoelastic_instability,
+    field = velocity,
+    hdf = viscoelastic_instability_AH.hdf5,
+    file_num = 0,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 1,
+    field_dim = 0
+    )
+
+
+GifInfo(
+    path = ./viscoelastic_instability/viscoelastic_instability_AH.hdf5/viscoelastic_instability-f0-t2-C-d(1,1)-c0.gif,
+    sim = viscoelastic_instability,
+    field = C,
+    hdf = viscoelastic_instability_AH.hdf5,
+    file_num = 0,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 2,
+    field_dim = (1,1)
+    )
+
+
+SIMULATION:: 'turbulent_radiative_layer_2D'
+:: 0
+
+GifInfo(
+    path = ./turbulent_radiative_layer_2D/turbulent_radiative_layer_tcool_0.56.hdf5/turbulent_radiative_layer_2D-f5-t1-velocity-d1-c0.gif,
+    sim = turbulent_radiative_layer_2D,
+    field = velocity,
+    hdf = turbulent_radiative_layer_tcool_0.56.hdf5,
+    file_num = 5,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 1,
+    field_dim = 1
+    )
+
+
+GifInfo(
+    path = ./turbulent_radiative_layer_2D/turbulent_radiative_layer_tcool_0.56.hdf5/turbulent_radiative_layer_2D-f5-t0-density-c0.gif,
+    sim = turbulent_radiative_layer_2D,
+    field = density,
+    hdf = turbulent_radiative_layer_tcool_0.56.hdf5,
+    file_num = 5,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
+
+GifInfo(
+    path = ./turbulent_radiative_layer_2D/turbulent_radiative_layer_tcool_0.56.hdf5/turbulent_radiative_layer_2D-f5-t0-pressure-c0.gif,
+    sim = turbulent_radiative_layer_2D,
+    field = pressure,
+    hdf = turbulent_radiative_layer_tcool_0.56.hdf5,
+    file_num = 5,
+    slice_num = n/a,
+    cond = 0,
+    field_type = 0,
+    field_dim = n/a
+    )
+
