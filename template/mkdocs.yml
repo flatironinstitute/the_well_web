@@ -1,13 +1,15 @@
 site_name: polymathic -- the Well
 theme:
   name: material
+  features:
+    - navigation.expand
   custom_dir: docs/overrides
   extra_css:
     - css/extra.css
 
 nav:
   - Home: index.md
-  - Additional Pages:
+  - Simulations:
       - Page template: additional-pages/page-template.md
 
 markdown_extensions:

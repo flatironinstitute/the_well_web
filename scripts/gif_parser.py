@@ -55,6 +55,9 @@ class GifInfo:
                 else:
                     raise ValueError("bad ind " + ind + " " + repr(sp))
                 
+    def sort_key(self):
+        return (self.sim, self.field, self.cond, self.file_num, self.slice_num)
+                
     def locate(self, root):
         if root[-1:] != '/':
             root += '/'
@@ -150,7 +153,9 @@ class SimsInfo:
         for gifinfo in gifinfos:
             self.sims[gifinfo.sim][gifinfo.cond] = {}
         for gifinfo in gifinfos:
-            self.sims[gifinfo.sim][gifinfo.cond][gifinfo.field] = gifinfo
+            self.sims[gifinfo.sim][gifinfo.cond][gifinfo.field] = {}
+        for gifinfo in gifinfos:
+            self.sims[gifinfo.sim][gifinfo.cond][gifinfo.field][gifinfo.sort_key()] = gifinfo
 
     def locate(self, root):
         for gifinfo in self.gifinfos:
@@ -174,6 +179,20 @@ class SimsInfo:
         return simlinks
 
     def generate_markdown_file(self, filepath, sim, conds):
+        with open(filepath, 'w') as f:
+            f.write(f"# Simulation: {sim}\n\n")
+            for cond in sorted(conds.keys()):
+                fields = conds[cond]
+                f.write(f"## Initial condition: {cond}\n\n")
+                for field in sorted(fields.keys()):
+                    gifs = fields[field]
+                    f.write(f"### Field: {field}\n\n")
+                    for srt in sorted(gifs.keys()):
+                        gif = gifs[srt]
+                        f.write(gif.html_table() + "\n\n")
+                        f.write(gif.img_tag() + "\n\n")
+
+    def generate_markdown_file0(self, filepath, sim, conds):
         with open(filepath, 'w') as f:
             f.write(f"# Simulation: {sim}\n\n")
             for cond, gifs in conds.items():
