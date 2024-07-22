@@ -1,6 +1,13 @@
 # the_well_web
 Tools for building a website featuring visualizations from polymathic/the_well
 
+# Preview the mkdocs website template structure
+
+```bash
+cd $root/template
+mkdocs serve
+```
+
 # Build the mkdocs markdown tree
 
 ```bash
