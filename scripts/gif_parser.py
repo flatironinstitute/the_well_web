@@ -2,7 +2,7 @@
 import os
 import shutil
 
-GIF_LISTING = "../data/all_gifs.txt"
+GIF_LISTING = "../data/all_mp4.txt"
 
 # for example
 # ./MHD_256/MHDMa_0.7_Ms_0.5.hdf5/MHD_256-f0-density-c0/MHD_256-f0-density-s1-c0.gif
@@ -62,6 +62,7 @@ class GifInfo:
         if root[-1:] != '/':
             root += '/'
         self.location = self.path.replace("./", root)
+        self.mp4 = self.location.replace(".gif", ".mp4")
         return self.location
     
     def __repr__(self) -> str:
@@ -72,6 +73,16 @@ class GifInfo:
     
     def img_tag(self):
         return f'<img src="{self.location}" alt="{self.path}"/>'
+    
+    def video_tag(self):
+        return video_fmt.format(mp4=self.mp4)
+    
+video_fmt = '''
+<video controls>
+    <source src="{mp4}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+'''
     
 giffmt = '''
 GifInfo(
@@ -190,7 +201,8 @@ class SimsInfo:
                     for srt in sorted(gifs.keys()):
                         gif = gifs[srt]
                         f.write(gif.html_table() + "\n\n")
-                        f.write(gif.img_tag() + "\n\n")
+                        #f.write(gif.img_tag() + "\n\n")
+                        f.write(gif.video_tag() + "\n\n")
 
     def generate_markdown_file0(self, filepath, sim, conds):
         with open(filepath, 'w') as f:
