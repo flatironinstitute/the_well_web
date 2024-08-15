@@ -13,7 +13,7 @@
             /* text-shadow: 2px 2px 0px white, -2px -2px 0px white; */
         }
         .md-main {
-            text-shadow: 1px 1px 0px skyblue, -1px -1px 0px yellow;
+            /* text-shadow: 1px 1px 0px skyblue, -1px -1px 0px yellow; */
             color: black;
             font-weight: bold;
         }
@@ -36,8 +36,98 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.5; /* Semi-transparent video */
+            /* opacity: 0.5; /* Semi-transparent video */
         }
+        
+        p {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px; /* Add some padding to ensure enough space around the text */
+            /* font-size: 24px;
+            color: #000; /* Text color */
+            z-index: 1; /* Ensure the text is above the background */
+            margin: 10px 0; /* Add some margin to separate the paragraphs */
+        }
+        
+        p::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+            z-index: -1; /* Place the background behind the text */
+            border-radius: 5px; /* Optional: add border-radius for rounded corners */
+        }      
+
+        
+        h1 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px; /* Add some padding to ensure enough space around the text */
+    /* font-size: 24px;
+    color: #000; /* Text color */
+    z-index: 1; /* Ensure the text is above the background */
+    margin: 10px 0; /* Add some margin to separate the paragraphs */
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    z-index: -1; /* Place the background behind the text */
+    border-radius: 5px; /* Optional: add border-radius for rounded corners */
+}      
+        
+        
+h2 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px; /* Add some padding to ensure enough space around the text */
+    /* font-size: 24px;
+    color: #000; /* Text color */
+    z-index: 1; /* Ensure the text is above the background */
+    margin: 10px 0; /* Add some margin to separate the paragraphs */
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    z-index: -1; /* Place the background behind the text */
+    border-radius: 5px; /* Optional: add border-radius for rounded corners */
+}      
+        
+.md-nav__list {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px; /* Add some padding to ensure enough space around the text */
+    /* font-size: 24px;
+    color: #000; /* Text color */
+    z-index: 1; /* Ensure the text is above the background */
+    margin: 10px 0; /* Add some margin to separate the paragraphs */
+}
+
+.md-nav__list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    z-index: -1; /* Place the background behind the text */
+    border-radius: 5px; /* Optional: add border-radius for rounded corners */
+}
     </style>
     {% endif %}
 {% endblock %}
