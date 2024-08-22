@@ -153,3 +153,10 @@ h2::before {
 {{ super() }}
 
 {% endblock %}
+
+
+{% block content %}
+    {{ super() }}
+    <hr>
+    <p><em>This is the standard trailing HTML content.</em></p>
+{% endblock %}
