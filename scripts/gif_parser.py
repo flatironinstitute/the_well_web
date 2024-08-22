@@ -229,9 +229,19 @@ def get_sims_info(from_file=GIF_LISTING):
         lines = f.readlines()
     return SimsInfo(lines)
 
+
+RUSTY_GIF_LOCATION = "/mnt/home/awatters/public_www/polymathic/assets/gifs"
+
 def generate_site(at_folder, gif_folder):
     print ("Generating mkdocs site at", at_folder, "from gifs at", gif_folder)
     sims_info = get_sims_info()
+    if not os.path.exists(gif_folder):
+        if os.path.exists(RUSTY_GIF_LOCATION):
+            shutil.copytree(RUSTY_GIF_LOCATION, gif_folder)
+        else:
+            print("Please get gifs from the rusty cluster at", RUSTY_GIF_LOCATION)
+            print("and put them here: ", gif_folder)
+            raise ValueError("no gif folder at " + gif_folder)
     if os.path.exists(at_folder):
         shutil.rmtree(at_folder)
     shutil.copytree("../template", at_folder)
@@ -242,13 +252,18 @@ def generate_site(at_folder, gif_folder):
     mdroot = "additional-pages"
     mdpath = at_folder + "/docs/" + mdroot
     simlinks = sims_info.generate_markdown_files(mdpath, mdroot)
-    page_lines = sims_info.generate_page_lines()
-    config_template = open("../template/mkdocs.yml").read()
-    config = config_template.replace(page_line_eg, page_lines)
-    with open(at_folder + "/mkdocs.yml", 'w') as f:
-        f.write(config)
+    # The page lines are now static (not generated)
+    if 0:
+        page_lines = sims_info.generate_page_lines()
+        config_template = open("../template/mkdocs.yml").read()
+        config = config_template.replace(page_line_eg, page_lines)
+        with open(at_folder + "/mkdocs.yml", 'w') as f:
+            f.write(config)
 
 def test():
+    generate_site("../mkdocs", "../gifs")
+
+def test1():
     generate_site("/Users/awatters/repos/the_well_web/mkdocs", "/Users/awatters/misc/polymathic/gifs")
 
 def test0():
