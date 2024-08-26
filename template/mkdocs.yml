@@ -6,6 +6,7 @@ theme:
     accent: 'indigo'
   features:
     #- navigation.expand
+    - navigation.tabs
     - search.suggest  # Enables search suggestion
   custom_dir: docs/overrides
   extra_css:
@@ -14,7 +15,11 @@ theme:
 
 nav:
   - Home: index.md
+  - Getting Started: getting_started.md
+  - Tools: tools.md
+  - Benchmarks: benchmarks.md
   - Simulations:
+      - Overview: datasets_overview.md
       - acoustic_scattering_maze_2d:
           - description: descriptions/acoustic_scattering_maze_2d.md
           - animations: additional-pages/acoustic_scattering_maze_2d.md
