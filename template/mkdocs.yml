@@ -6,6 +6,7 @@ theme:
     accent: 'indigo'
   features:
     #- navigation.expand
+    - navigation.tabs
     - search.suggest  # Enables search suggestion
   custom_dir: docs/overrides
   extra_css:
@@ -14,7 +15,11 @@ theme:
 
 nav:
   - Home: index.md
-  - Simulations:
+  - Getting Started: getting_started.md
+  - Tools: tools.md
+  - Benchmarks: benchmarks.md
+  - Data sets:
+      - Overview: datasets_overview.md
       - MHD 256:
           - description: descriptions/MHD_256.md
           - animations: additional-pages/MHD_256.md
@@ -66,6 +71,7 @@ nav:
       - post neutron star merger:
           - description: descriptions/post_neutron_star_merger.md
           - animations: additional-pages/post_neutron_star_merger.md
+  - References and Contact: reference_contact.md
 
 markdown_extensions:
   - admonition
