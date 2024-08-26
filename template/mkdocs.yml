@@ -78,3 +78,5 @@ markdown_extensions:
   - codehilite
   - toc:
       permalink: true
+  - pymdownx.arithmatex:
+      generic: true
