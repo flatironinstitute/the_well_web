@@ -144,7 +144,14 @@ h2::before {
     </style>
     {% endif %}
     <style>
-.md-header { 
+        .md-header { 
+            /* --md-primary-fg-color: #ff0000; */
+          --md-primary-fg-color: #537EBA;
+          /* --md-primary-bg-color: #ff0000; 
+          --md-primary-border-color: #ff0000;
+          --md-primary-accent-color: #ff0000; */
+        }
+.md-tabs { 
     /* --md-primary-fg-color: #ff0000; */
   --md-primary-fg-color: #537EBA;
   /* --md-primary-bg-color: #ff0000; 
@@ -171,7 +178,8 @@ h2::before {
 {% block content %}
     {{ super() }}
     <!-- This is the standard trailing HTML content. -->
-    <p><a href="https://arxiv.org/abs/your.paper" aria-label="GitHub">
+    <!-- TRAILER COMMENTED FOR NOW
+     <p><a href="https://arxiv.org/abs/your.paper" aria-label="GitHub">
         <i class="fas fa-book"></i> Paper: https://arxiv.org/abs/your.paper
     </a>
     <br>
@@ -181,4 +189,5 @@ h2::before {
     <br>
     <i class="fas fa-envelope"></i> Email: contact at your-domain dot com
     </p>
+-->
 {% endblock %}
