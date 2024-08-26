@@ -18,60 +18,59 @@ nav:
   - Getting Started: getting_started.md
   - Tools: tools.md
   - Benchmarks: benchmarks.md
-  - Data sets:
+  - Simulations:
       - Overview: datasets_overview.md
-      - MHD 256:
-          - description: descriptions/MHD_256.md
-          - animations: additional-pages/MHD_256.md
-      - rayleigh benard:
-          - description: descriptions/rayleigh_benard.md
-          - animations: additional-pages/rayleigh_benard.md
-      - acoustic scattering maze 2d:
+      - acoustic_scattering_maze_2d:
           - description: descriptions/acoustic_scattering_maze_2d.md
           - animations: additional-pages/acoustic_scattering_maze_2d.md
-      - rayleigh taylor instability:
-          - description: descriptions/rayleigh_taylor_instability.md
-          - animations: additional-pages/rayleigh_taylor_instability.md
-      - active matter:
+      - active_matter:
           - description: descriptions/active_matter.md
           - animations: additional-pages/active_matter.md
-      - shear flow:
-          - description: descriptions/shear_flow.md
-          - animations: additional-pages/shear_flow.md
-      - convective envelope rsg:
+      - convective_envelope_rsg:
           - description: descriptions/convective_envelope_rsg.md
           - animations: additional-pages/convective_envelope_rsg.md
-      - supernova explosion 128:
-          - description: descriptions/supernova_explosion_128.md
-          - animations: additional-pages/supernova_explosion_128.md
-      - euler quadrants:
+      - euler_multi_quadrants:
           - description: descriptions/euler_quadrants.md
           - animations: additional-pages/euler_quadrants.md
-      - turbulence gravity cooling:
-          - description: descriptions/turbulence_gravity_cooling.md
-          - animations: additional-pages/turbulence_gravity_cooling.md
-      - helmholtz staircase:
+      - gray_scott_reaction_diffusion:
+          - description: descriptions/gray_scott_reaction_diffusion.md
+          - animations: additional-pages/gray_scott_reaction_diffusion.md
+      - helmholtz_staircase:
           - description: descriptions/helmholtz_staircase.md
           - animations: additional-pages/helmholtz_staircase.md
-      - turbulent radiative layer 2D:
-          - description: descriptions/turbulent_radiative_layer_2D.md
-          - animations: additional-pages/turbulent_radiative_layer_2D.md
-      - pattern formation:
-          - description: descriptions/pattern_formation.md
-          - animations: additional-pages/pattern_formation.md
-      - turbulent radiative layer 3D:
-          - description: descriptions/turbulent_radiative_layer_3D.md
-          - animations: additional-pages/turbulent_radiative_layer_3D.md
+      - MHD:
+          - description: descriptions/MHD_256.md
+          - animations: additional-pages/MHD_256.md
       - planetswe:
           - description: descriptions/planetswe.md
           - animations: additional-pages/planetswe.md
-      - viscoelastic instability:
-          - description: descriptions/viscoelastic_instability.md
-          - animations: additional-pages/viscoelastic_instability.md
-      - post neutron star merger:
+      - post_neutron_star_merger:
           - description: descriptions/post_neutron_star_merger.md
           - animations: additional-pages/post_neutron_star_merger.md
-  - References and Contact: reference_contact.md
+      - rayleigh_benard:
+          - description: descriptions/rayleigh_benard.md
+          - animations: additional-pages/rayleigh_benard.md
+      - rayleigh_taylor_instability:
+          - description: descriptions/rayleigh_taylor_instability.md
+          - animations: additional-pages/rayleigh_taylor_instability.md
+      - shear_flow:
+          - description: descriptions/shear_flow.md
+          - animations: additional-pages/shear_flow.md
+      - supernova_explosion:
+          - description: descriptions/supernova_explosion.md
+          - animations: additional-pages/supernova_explosion.md
+      - turbulence_gravity_cooling:
+          - description: descriptions/turbulence_gravity_cooling.md
+          - animations: additional-pages/turbulence_gravity_cooling.md
+      - turbulent_radiative_layer_2D:
+          - description: descriptions/turbulent_radiative_layer_2D.md
+          - animations: additional-pages/turbulent_radiative_layer_2D.md
+      - turbulent_radiative_layer_3D:
+          - description: descriptions/turbulent_radiative_layer_3D.md
+          - animations: additional-pages/turbulent_radiative_layer_3D.md
+      - viscoelastic_instability:
+          - description: descriptions/viscoelastic_instability.md
+          - animations: additional-pages/viscoelastic_instability.md
 
 markdown_extensions:
   - admonition
