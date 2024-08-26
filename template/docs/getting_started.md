@@ -3,7 +3,7 @@
 
 This is a stub for the getting started page.
 
-This page is what the users will see when they select "Data sets" in the navigation panel.
+This page is what the users will see when they select "Getting started" in the navigation panel.
 
 Please edit this page to replace this nonsense filler text.
 
