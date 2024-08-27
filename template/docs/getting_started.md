@@ -1,25 +1,43 @@
 
 # Getting Started
 
-This is a stub for the getting started page.
+Welcome to The Well, a large-scale collection of diverse scientific numerical simulations designed to accelerate research in machine learning and computational science. This guide will help you get started with accessing, installing, and utilizing The Well datasets.
 
-This page is what the users will see when they select "Getting started" in the navigation panel.
+## Prerequisites
 
-Please edit this page to replace this nonsense filler text.
+Before diving into The Well, ensure that your system meets the following requirements:
+```
+System Requirements:
+Python Version: Python 3.10 or higher
+Disk Space: At least 15TB of free disk space to accommodate the full collection (individual datasets range from 6.7GB to 4.9TB)
+RAM: Minimum 80GB recommended for processing large datasets
+GPU: NVIDIA GPU with CUDA support is recommended for efficient training and inference
+```
 
-Here is an example of math notation $ \int_0^\infty e^{-x^2} \, dx $
-
-Here is an equation on its own line
-
-$$
-f(x) = \frac{1}{\sqrt{2 \pi}} e^{-\frac{x^2}{2}}
-$$
+## Package Dependencies
+```
+"torch>=2.1",
+"h5py>=3.9.0",
+"hydra-core",
+"einops",
+"wandb",
+"torch_harmonics",
+"neuraloperator",
+"timm",
+"matplotlib",
+"plotly",
+```
 
 ## Installation
 
-To install the package... fix me please....
+### Environement setup
+Create a venv...
 
-## Example
+To install the package...
 
-For example... [add example here, please...]
+Download a dataset...
+
+## Using the Well
+
+Small code snipet that shows how to load a dataset and visualize it...
 

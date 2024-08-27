@@ -2,6 +2,7 @@ site_name: The Well
 theme:
   name: material
   palette:
+    - primary: red
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -18,11 +19,17 @@ theme:
   features:
     #- navigation.expand
     - navigation.tabs
+    - navigation.tabs.sticky
     - search.suggest  # Enables search suggestion
+    - navigation.instant
+    - navigation.instant.prefetch
+    # - navigation.path
+    - toc.follow
   custom_dir: docs/overrides
   extra_css:
     - css/extra.css
   logo: 'assets/images/_TheWell Color icon.svg' #_TheWell Color.svg'
+  favicon: 'assets/images/_TheWell Color icon.svg'
 
 nav:
   - Home: index.md
@@ -88,5 +95,18 @@ markdown_extensions:
   - codehilite
   - toc:
       permalink: true
-  - pymdownx.arithmatex:
+  - pymdownx.arithmatex: 
       generic: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/PolymathicAI/the_well
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/PolymathicAI
+    - icon: fontawesome/solid/at
+      link: https://polymathic-ai.org/
+copyright: Copyright &copy; 2024 Polymathic AI  
+repo_url: https://github.com/PolymathicAI/the_well
+repo_name: the_well
+
