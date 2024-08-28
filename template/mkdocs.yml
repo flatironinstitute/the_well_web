@@ -89,15 +89,6 @@ nav:
       - viscoelastic_instability:
           - description: descriptions/viscoelastic_instability.md
           - animations: additional-pages/viscoelastic_instability.md
-
-markdown_extensions:
-  - admonition
-  - codehilite
-  - toc:
-      permalink: true
-  - pymdownx.arithmatex: 
-      generic: true
-
 extra:
   social:
     - icon: fontawesome/brands/github 
@@ -109,4 +100,14 @@ extra:
 copyright: Copyright &copy; 2024 Polymathic AI  
 repo_url: https://github.com/PolymathicAI/the_well
 repo_name: the_well
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex: 
+      generic: true
+
+
 
