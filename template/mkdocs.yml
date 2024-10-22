@@ -7,7 +7,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
-        icon: material/weather-night 
+        icon: material/weather-night
         name: Switch to dark mode
 
     # Palette toggle for dark mode
@@ -34,6 +34,8 @@ theme:
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
+  - Tutorials:
+      - Interface: tutorials/dataset.ipynb
   - Tools: tools.md
   - Benchmarks: benchmarks.md
   - Simulations:
@@ -91,13 +93,13 @@ nav:
           - animations: additional-pages/viscoelastic_instability.md
 extra:
   social:
-    - icon: fontawesome/brands/github 
+    - icon: fontawesome/brands/github
       link: https://github.com/PolymathicAI/the_well
     - icon: fontawesome/brands/x-twitter
       link: https://twitter.com/PolymathicAI
     - icon: fontawesome/solid/at
       link: https://polymathic-ai.org/
-copyright: Copyright &copy; 2024 Polymathic AI  
+copyright: Copyright &copy; 2024 Polymathic AI
 repo_url: https://github.com/PolymathicAI/the_well
 repo_name: the_well
 
@@ -106,8 +108,8 @@ markdown_extensions:
   - codehilite
   - toc:
       permalink: true
-  - pymdownx.arithmatex: 
+  - pymdownx.arithmatex:
       generic: true
 
-
-
+plugins:
+  - mkdocs-jupyter
