@@ -2,7 +2,7 @@ site_name: The Well
 theme:
   name: material
   palette:
-    - primary: red
+    - primary: light blue
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -25,9 +25,6 @@ theme:
     - navigation.instant.prefetch
     # - navigation.path
     - toc.follow
-  custom_dir: docs/overrides
-  extra_css:
-    - css/extra.css
   logo: 'assets/images/_TheWell Color icon.svg' #_TheWell Color.svg'
   favicon: 'assets/images/_TheWell Color icon.svg'
 
@@ -102,6 +99,14 @@ extra:
 copyright: Copyright &copy; 2024 Polymathic AI
 repo_url: https://github.com/PolymathicAI/the_well
 repo_name: the_well
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+extra_javascript:
+  - javascript/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 markdown_extensions:
   - admonition
