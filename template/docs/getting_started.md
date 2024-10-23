@@ -43,4 +43,4 @@ If the `--dataset` argument is omitted, all datasets will be downloaded. This co
 
 ## Using a dataset
 
-Please refer to the [tutorials](tutorials).
+Please refer to the [tutorials](/tutorials/dataset).
