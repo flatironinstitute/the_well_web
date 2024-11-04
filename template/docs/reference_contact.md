@@ -1,34 +1,17 @@
 
 # References and Contact
 
-## Paper
+## References
 
-**Abstract:**
+This project has been led by the <a href="https://polymathic-ai.org/"> Polymathic AI</a> collaboration, in collaboration with researchers from the Flatiron Institute, University of Colorado Boulder, University of Cambridge, New York University, Rutgers University, Cornell University, University of Tokyo, Los Alamos Natioinal Laboratory, University of Califronia, Berkeley, Princeton University, CEA DAM, University of Liège.
 
-This is a stub for the arxiv paper abstract
+You can find more information about the Well on the [arxiv](arxiv), [GitHub](https://github.com/PolymathicAI/the_well), and [Polymathic AI](https://polymathic-ai.org/) websites.
 
-This page is what the users will see when they select "references" in the navigation panel.
+The dataset have are also accessible through the [Hugging Face](huggingface) platform.
 
-Please edit this page to replace this nonsense filler text.
+## Bug report and feature request
 
-Here is an example of math notation $ \int_0^\infty e^{-x^2} \, dx $
-
-Here is an equation on its own line
-
-$$
-f(x) = \frac{1}{\sqrt{2 \pi}} e^{-\frac{x^2}{2}}
-$$
-
-Please edit this stub to make it into a meaningful overview.
-
-<a href="https://arxiv.org/abs/your.paper" aria-label="GitHub">
-        <i class="fas fa-book"></i> Paper: https://arxiv.org/abs/your.paper
-    </a>
-
-## Code
-<a href="https://github.com/your-repo" aria-label="GitHub">
-    <i class="fab fa-github"></i> Repository: https://github.com/your-repo
-</a>
+You can open an issue on the [GitHub repository](https://github.com/PolymathicAI/the_well/issues) to report a bug (in the data or the code), or request a feature.
 
 ## Contact
- <i class="fas fa-envelope"></i> Email: contact at your-domain dot com
+For other questions, you can contact [Ruben Ohana](https://rubenohana.github.io/) and [Michael McCabe](https://mikemccabe210.github.io/) at $\texttt{\{rohana, mmcabe\}@flatironinstitute.org}$.

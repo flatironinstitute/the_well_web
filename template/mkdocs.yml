@@ -88,6 +88,7 @@ nav:
       - viscoelastic_instability:
           - description: descriptions/viscoelastic_instability.md
           - animations: additional-pages/viscoelastic_instability.md
+  - Contact: reference_contact.md
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -96,6 +97,8 @@ extra:
       link: https://twitter.com/PolymathicAI
     - icon: fontawesome/solid/at
       link: https://polymathic-ai.org/
+    - icon: simple/arxiv
+      link: https://arxiv.org/abs/2109.13594 #To modify!!
 copyright: Copyright &copy; 2024 Polymathic AI
 repo_url: https://github.com/PolymathicAI/the_well
 repo_name: the_well
@@ -118,3 +121,4 @@ markdown_extensions:
 
 plugins:
   - mkdocs-jupyter
+  - search

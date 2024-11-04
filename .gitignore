@@ -50,6 +50,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+the_well_web_env/
 
 # Translations
 *.mo
