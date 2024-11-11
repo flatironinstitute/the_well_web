@@ -7,7 +7,7 @@ This project has been led by the <a href="https://polymathic-ai.org/"> Polymathi
 
 You can find more information about the Well on the [arxiv](arxiv), [GitHub](https://github.com/PolymathicAI/the_well), and [Polymathic AI](https://polymathic-ai.org/) websites.
 
-The dataset have are also accessible through the [Hugging Face](huggingface) platform.
+The dataset have are also accessible through the [HuggingFace](https://huggingface.co/polymathic-ai) Hub.
 
 ## Bug report and feature request
 

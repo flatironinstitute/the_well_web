@@ -2,7 +2,7 @@ site_name: The Well
 theme:
   name: material
   palette:
-    - primary: light blue
+    - primary: blue
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -37,57 +37,28 @@ nav:
   - Benchmarks: benchmarks.md
   - Simulations:
       - Overview: datasets_overview.md
-      - acoustic_scattering_maze_2d:
-          - description: descriptions/acoustic_scattering_maze_2d.md
-          - animations: additional-pages/acoustic_scattering_maze_2d.md
-      - active_matter:
-          - description: descriptions/active_matter.md
-          - animations: additional-pages/active_matter.md
-      - convective_envelope_rsg:
-          - description: descriptions/convective_envelope_rsg.md
-          - animations: additional-pages/convective_envelope_rsg.md
-      - euler_multi_quadrants:
-          - description: descriptions/euler_quadrants.md
-          - animations: additional-pages/euler_quadrants.md
-      - gray_scott_reaction_diffusion:
-          - description: descriptions/gray_scott_reaction_diffusion.md
-          - animations: additional-pages/gray_scott_reaction_diffusion.md
-      - helmholtz_staircase:
-          - description: descriptions/helmholtz_staircase.md
-          - animations: additional-pages/helmholtz_staircase.md
-      - MHD:
-          - description: descriptions/MHD_256.md
-          - animations: additional-pages/MHD_256.md
-      - planetswe:
-          - description: descriptions/planetswe.md
-          - animations: additional-pages/planetswe.md
-      - post_neutron_star_merger:
-          - description: descriptions/post_neutron_star_merger.md
-          - animations: additional-pages/post_neutron_star_merger.md
-      - rayleigh_benard:
-          - description: descriptions/rayleigh_benard.md
-          - animations: additional-pages/rayleigh_benard.md
-      - rayleigh_taylor_instability:
-          - description: descriptions/rayleigh_taylor_instability.md
-          - animations: additional-pages/rayleigh_taylor_instability.md
-      - shear_flow:
-          - description: descriptions/shear_flow.md
-          - animations: additional-pages/shear_flow.md
-      - supernova_explosion:
-          - description: descriptions/supernova_explosion.md
-          - animations: additional-pages/supernova_explosion.md
-      - turbulence_gravity_cooling:
-          - description: descriptions/turbulence_gravity_cooling.md
-          - animations: additional-pages/turbulence_gravity_cooling.md
-      - turbulent_radiative_layer_2D:
-          - description: descriptions/turbulent_radiative_layer_2D.md
-          - animations: additional-pages/turbulent_radiative_layer_2D.md
-      - turbulent_radiative_layer_3D:
-          - description: descriptions/turbulent_radiative_layer_3D.md
-          - animations: additional-pages/turbulent_radiative_layer_3D.md
-      - viscoelastic_instability:
-          - description: descriptions/viscoelastic_instability.md
-          - animations: additional-pages/viscoelastic_instability.md
+      - acoustic_scattering_discontinuous: descriptions/acoustic_scattering_discontinuous.md
+      - acoustic_scattering_inclusions: descriptions/acoustic_scattering_inclusions.md
+      - acoustic_scattering_maze: descriptions/acoustic_scattering_maze.md
+      - active_matter: descriptions/active_matter.md
+      - convective_envelope_rsg: descriptions/convective_envelope_rsg.md
+      - euler_multi_quadrants_openBC: descriptions/euler_multi_quadrants_openBC.md
+      - euler_multi_quadrants_periodicBC: descriptions/euler_multi_quadrants_periodicBC.md
+      - gray_scott_reaction_diffusion: descriptions/gray_scott_reaction_diffusion.md
+      - helmholtz_staircase: descriptions/helmholtz_staircase.md
+      - MHD_64: descriptions/MHD_64.md
+      - MHD_256: descriptions/MHD_256.md
+      - planetswe: descriptions/planetswe.md
+      - post_neutron_star_merger: descriptions/post_neutron_star_merger.md
+      - rayleigh_benard: descriptions/rayleigh_benard.md
+      - rayleigh_taylor_instability: descriptions/rayleigh_taylor_instability.md
+      - shear_flow: descriptions/shear_flow.md
+      - supernova_explosion_64: descriptions/supernova_explosion_64.md
+      - supernova_explosion_128: descriptions/supernova_explosion_128.md
+      - turbulence_gravity_cooling: descriptions/turbulence_gravity_cooling.md
+      - turbulent_radiative_layer_2D: descriptions/turbulent_radiative_layer_2D.md
+      - turbulent_radiative_layer_3D: descriptions/turbulent_radiative_layer_3D.md
+      - viscoelastic_instability: descriptions/viscoelastic_instability.md
   - Contact: reference_contact.md
 extra:
   social:

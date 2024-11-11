@@ -1,6 +1,6 @@
-# `turbulence_gravity_cooling` - Turbulent Interstellar medium in galaxies
+# Turbulent Interstellar Medium in Galaxies
 
-**One line description of the data:**  Turbulence in interstellar medium in various evolution stages of galaxies.
+**One line description of the data:**  Turbulence in an interstellar medium in various evolution stages of galaxies.
 
 **Longer description of the data:**  These simulations are a turbulent fluid with gravity modeling interstellar medium in galaxies. These fluids make dense filaments, which will form new stars. The timescale and frequency of making new filaments are varied depending on the strength of cooling. It is parametrized by the amount of metal (metallicity), density, and temperature.
 
@@ -10,7 +10,7 @@
 
 **Code or software used to generate the data**: ASURA-FDPS (Smoothed Particle Hydrodynamics), [Github repository](https://github.com/FDPS/FDPS).
 
-**Equation**: 
+**Equation**:
 
 \begin{align}
 P&=(\gamma-1) \rho u \\
@@ -26,11 +26,13 @@ where $P$, $\rho$, and $u$ are the pressure. $r$ is the position, $a_{\rm visc}$
 
 | Dataset    | FNO | TFNO  | Unet | CNextU-net
 |:-:|:-:|:-:|:-:|:-:|
-| `turbulence_gravity_cooling` | 1.31 |2.06| 1.44 |$\mathbf{1.16}$ |
+| `turbulence_gravity_cooling` | 0.2429 |0.2673| 0.6753 |$\mathbf{0.2096}$ |
+
+Table: VRMSE metrics on test sets (lower is better). Best results are shown in bold. VRMSE is scaled such that predicting the mean value of the target field results in a score of 1.
 
 # About the data
 
-**Dimension of discretized data:** $50$ time-steps of  $64\times 64\times 64$ cubes.
+**Dimension of discretized data:** 50 time-steps of  64 $\times$ 64 $\times$ 64 cubes.
 
 **Fields available in the data:** Pressure (scalar field), density (scalar field), temperature (scalar field), velocity (tensor field).
 
@@ -40,7 +42,7 @@ where $P$, $\rho$, and $u$ are the pressure. $r$ is the position, $a_{\rm visc}$
 
 **Grid type:** uniform, cartesian coordinates.
 
-**Initial conditions:** $2700$ random seeds generated using [this code]( https://github.com/amusecode/amuse/blob/main/src/amuse/ext/molecular_cloud.py) (Virialized isothermal gas sphere with turbulence following the velocity spectrum $E(k) \propto k^{-2}$, which is Burgers turbulence (Burgers 1948 and Kupilas+2021 for reference)).
+**Initial conditions:** 2700 random seeds generated using https://github.com/amusecode/amuse/blob/main/src/amuse/ext/molecular_cloud.py (Virialized isothermal gas sphere with turbulence following the velocity spectrum $E(k) \propto k^{-2}$, which is Burgers turbulence (Burgers 1948 and Kupilas+2021 for reference)).
 
 **Boundary conditions:** open.
 
@@ -48,7 +50,7 @@ where $P$, $\rho$, and $u$ are the pressure. $r$ is the position, $a_{\rm visc}$
 
 **Data are stored separated by ($\Delta t$):** 0.02 free fall time.
 
-**Total time range ($t_{min}$ to $t_{max}$):** 1 Free Fall time (= $L^3/GM$ ); $L=(\rho / \rho_0)^{1/3} \times 60$ pc, $\rho_0=44.5/\rm{cc}$, $M=10^6$ M $_\odot$.
+**Total time range ($t_{min}$ to $t_{max}$):** 1 Free Fall time (= $L^3/GM$ ); $L=(\rho / \rho_0)^{1/3} \times 60$ pc, $\rho_0=44.5/\rm{cc}$, $M=1,000,000$ M $_\odot$.
 
 
 **Spatial domain size ($L_x$, $L_y$, $L_z$):**
@@ -59,25 +61,26 @@ where $P$, $\rho$, and $u$ are the pressure. $r$ is the position, $a_{\rm visc}$
 | **Moderate (4.45 cm $^{-3}$)** | 129 pc | 21.9 Myr |0.44 Myr |
 | **Sparse (0.445 cm $^{-3}$)** | 278 pc | 69.3 Myr | 1.4 Myr |
 
-**Set of coefficients or non-dimensional parameters evaluated:** Initial temperature $T_0$=\{10K, 100K, 1000K\}, Initial number density of hydrogen $\rho_0=$\{44.5/cc, 4.45/cc, 0.445/cc\}, metallicity (effectively strength of cooling) $Z=\{Z_0, 0.1Z_0, 0\}$.
+**Set of coefficients or non-dimensional parameters evaluated:** Initial temperature $T_0=\{10K, 100K, 1000K\}$, Initial number density of hydrogen $\rho_0=\{44.5/cc, 4.45/cc, 0.445/cc\}$, metallicity (effectively strength of cooling) $Z=\{Z_0, 0.1\,Z_0, 0\}$.
 
 
-**Approximate time to generate the data:** $600,000$ node hours for all simulations. In more detail:
-#### Dense dataset (CPU hours)
+**Approximate time to generate the data:** $600\,000$ node hours for all simulations.
+
+#### For dense dataset (CPU hours)
 |           | Strong (1Z $_\odot$) | Weak (0.1 Z $_\odot$) | Adiabatic (0 Z $_\odot$) |
 |----------:|----------:|----------:|----------:|
 | **$10$ K** | $240$  | $167$ | $77$ |
 | **$100$ K** | $453$ | $204$  | $84$ |
 | **$1000$ K** | $933$ | $186$  | $46$ |
 
-#### Moderate dataset (CPU hours)
+#### For moderate dataset (CPU hours)
 |           | Strong (1Z $_\odot$) | Weak (0.1 Z $_\odot$) | Adiabatic (0 Z $_\odot$) |
 |----------:|----------:|----------:|----------:|
 | **$10$ K** | $214$  | $75$ | $62$ |
 | **$100$ K** | $556$ | $138$  | $116$ |
 | **$1000$ K** | $442$ | $208$  | $82$ |
 
-#### Sparse dataset (CPU hours)
+#### For sparse dataset (CPU hours)
 |           | Strong (1Z $_\odot$) | Weak (0.1 Z $_\odot$) | Adiabatic (0 Z $_\odot$) |
 |----------:|----------:|----------:|----------:|
 | **$10$ K** | $187$  | $102$ | $110$ |

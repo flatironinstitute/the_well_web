@@ -1,0 +1,56 @@
+/* Remove all margins, paddings, and spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Set body and html to full height */
+  html, body {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  /* Fullscreen container for the video */
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Fullscreen video */
+  .background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2; /* Adjust for desired transparency */
+    z-index: -1; /* Places video behind the text */
+  }
+
+  /* Overlay text styling */
+  .overlay-text {
+    position: relative;
+    z-index: 1; /* Places text above the video */
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    max-width: 80%; /* Optional: Limit text width for readability */
+    padding: 20px;
+  }
+
+  /* Optional: Add text shadow for readability */
+  .overlay-text h1,
+  .overlay-text p {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  }

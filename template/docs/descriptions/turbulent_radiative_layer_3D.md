@@ -1,4 +1,4 @@
-# `turbulent_radiative_layer_3D` - Turbulent Radiative Mixing Layers in 3 dimensions
+# Turbulent Radiative Mixing Layers - 3D
 
 **One line description of the data:** In many astrophysical systems, hot gas moves relative to cold gas, which leads to mixing. Mixing populates intermediate temperature gas that is highly reactive — in this case it is rapidly cooling.
 
@@ -10,33 +10,33 @@
 
 **Code or software used to generate the data**: [Athena++](https://www.athena-astro.app/).
 
-**Equation**: 
+**Equation**:
 
 
 \begin{align}
 \frac{ \partial \rho}{\partial t} + \nabla \cdot \left( \rho \vec{v} \right) &= 0 \\
 \frac{ \partial \rho \vec{v} }{\partial t} + \nabla \cdot \left( \rho \vec{v}\vec{v} + P \right) &= 0 \\
-\frac{ \partial E }{\partial t} + \nabla \cdot \left( (E + P) \vec{v} \right) &= - \frac{E}{t_{ cool}} \\
+\frac{ \partial E }{\partial t} + \nabla \cdot \left( (E + P) \vec{v} \right) &= - \frac{E}{t_{\rm cool}} \\
 E = P / (\gamma -1) \, \, \gamma &= 5/3
 \end{align}
 
-with $\rho$ the density, $\vec{v}$ the 3D velocity, $P$ the pressure, $E$ the total energy, and $t_{ cool}$ the cooling time.
+with $\rho$ the density, $\vec{v}$ the 3D velocity, $P$ the pressure, $E$ the total energy, and $t_{\rm cool}$ the cooling time.
 
 ![Gif](https://users.flatironinstitute.org/~polymathic/data/the_well/datasets/turbulent_radiative_layer_3D/gif/density_normalized.gif)
 
 | Dataset    | FNO | TFNO  | Unet | CNextU-net
 |:-:|:-:|:-:|:-:|:-:|
-| `turbulent_radiative_layer_3D`  | 103 |98.0| 61.5 |73.0|
+| `turbulent_radiative_layer_3D`  | 0.5278 |0.5187| 0.3728 |$\mathbf{0.3667}$|
 
-Preliminary benchmarking, in VRMSE.
+Table: VRMSE metrics on test sets (lower is better). Best results are shown in bold. VRMSE is scaled such that predicting the mean value of the target field results in a score of 1.
 
 # About the data
 
-**Dimension of discretized data:** $101$ timesteps of $256\times128\times128$ cubes.
+**Dimension of discretized data:** 101 timesteps of 256 $\times$ 128 $\times$ 128 cubes.
 
 **Fields available in the data:** Density (scalar field), pressure (scalar field), velocity (vector field).
 
-**Number of trajectories:** 90 trajectories (10 different seeds for each of the 9 $t_{\rm cool}$ variations).
+**Number of trajectories:** 90 trajectories (10 different seeds for each of the 9 $t_{cool}$ variations).
 
 **Estimated size of the ensemble of all simulations:** 744.6 GB.
 
@@ -56,16 +56,13 @@ Preliminary benchmarking, in VRMSE.
 
 **Set of coefficients or non-dimensional parameters evaluated:** $t_{cool} = \{0.03, 0.06, 0.1, 0.18, 0.32, 0.56, 1.00, 1.78, 3.16\}$.
 
-**Approximate time to generate the data:** $34,560$ CPU hours for all simulations.
+**Approximate time to generate the data:** $34\,560$ CPU hours for all simulations.
 
 **Hardware used to generate the data:** each simulation was generated on a 128 core "Rome" node.
 
 # What is interesting and challenging about the data:
 
-**What phenomena of physical interest are catpured in the data:** 
-- Capture the mass flux from hot to cold phase. 
-- Capture turbulent velocities. 
-- Capture the amount of mass per temperature bin ($T = \frac{P}{\rho}$).
+**What phenomena of physical interest are catpured in the data:** Capte the mass flux from hot to cold phase. Capture turbulent velocities. Capture the amount of mass per temperature bin ($T = \frac{P}{\rho}$).
 
 **How to evaluate a new simulator operating in this space:** Check whether the above physical phenomena are captured by the algorithm.
 

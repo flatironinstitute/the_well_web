@@ -1,4 +1,4 @@
-# `turbulent_radiative_layer_2D` - Turbulent Radiative Layer in 2 dimensions
+# Turbulent Radiative Layer - 2D
 
 **One line description of the data:** Everywhere in astrophysical systems hot gas moves relative to cold gas, which leads to mixing, and mixing populates intermediate temperature gas that is highly reactive—in this case it is rapidly cooling.
 
@@ -10,7 +10,8 @@
 
 **Code or software used to generate the data**: [Athena++](https://www.athena-astro.app/).
 
-**Equation**: 
+**Equation**:
+
 
 \begin{align}
 \frac{ \partial \rho}{\partial t} + \nabla \cdot \left( \rho \vec{v} \right) &= 0 \\
@@ -25,9 +26,9 @@ with $\rho$ the density, $\vec{v}$ the 2D velocity, $P$ the pressure, $E$ the to
 
 | Dataset    | FNO | TFNO  | Unet | CNextU-net
 |:-:|:-:|:-:|:-:|:-:|
-| `turbulent_radiative_layer_2D`  | 0.967| 1.01 |0.576| 0.575|
+| `turbulent_radiative_layer_2D`  | 0.5001| 0.5016 |0.2418| $\mathbf{0.1956}$|
 
-Preliminary benchmarking, in VRMSE.
+Table: VRMSE metrics on test sets (lower is better). Best results are shown in bold. VRMSE is scaled such that predicting the mean value of the target field results in a score of 1.
 
 
 # About the data
@@ -54,7 +55,7 @@ Preliminary benchmarking, in VRMSE.
 
 **Spatial domain size ($L_x$, $L_y$, $L_z$):** $x \in [-0.5, 0.5]$, $y \in [-1, 2]$ giving $L_x = 1$ and $L_y = 3$.
 
-**Set of coefficients or non-dimensional parameters evaluated:** $t_{cool} = \{0.03, 0.06, 0.1, 0.18, 0.32, 0.56, 1.00, 1.78, 3.16\}$. 
+**Set of coefficients or non-dimensional parameters evaluated:** $t_{cool} = \{0.03, 0.06, 0.1, 0.18, 0.32, 0.56, 1.00, 1.78, 3.16\}$.
 
 **Approximate time to generate the data:** 84 seconds using 48 cores for one simulation. 100 CPU hours for everything.
 
@@ -63,10 +64,9 @@ Preliminary benchmarking, in VRMSE.
 # What is interesting and challenging about the data:
 
 **What phenomena of physical interest are catpured in the data:**
-
 -	The mass flux from hot to cold phase.
 -	The turbulent velocities.
--	Amount of mass per temperature bin ($T = \frac{P}{\rho}$).
+-	Amount of mass per temperature bin (T = press/dens).
 
 
 **How to evaluate a new simulator operating in this space:** See whether it captures the right mass flux, the right turbulent velocities, and the right amount of mass per temperature bin.

@@ -1,4 +1,4 @@
-# `euler_multi_quadrants` - Riemann problems (compressible, inviscid fluid)
+# Euler Multi-quadrants - Riemann problems (compressible, inviscid fluid)
 
 **NOTE:** this dataset is distributed in two separate datasets: `euler_multi_quadrants_openBC` with open boundary conditions and `euler_multi_quadrants_periodicBC` with periodic boundary conditions.
 
@@ -19,14 +19,10 @@ U_t + F(U)_x + G(U)_y &= 0 \nonumber\\
 \textrm{where} \quad U = \begin{bmatrix} \rho \nonumber\\ \rho u \\ \rho v \\ e \end{bmatrix}, \quad F(U) = \begin{bmatrix} \rho u \\ \rho u^2 + p \\ \rho u v \\ u(e + p) \end{bmatrix},& \quad G(U) = \begin{bmatrix} \rho v \\ \rho u v \\ \rho v^2 + p \\ v(e + p) \end{bmatrix}, \quad \\ e = \frac{p}{(\gamma - 1)} + \frac{\rho (u^2 + v^2)}{2}&, \quad p = A\rho^{\gamma}. \nonumber
 \end{align}
 
-
 with $\rho$ the density, $u$ and $v$ the $x$ and $y$ velocity components, $e$ the energy, $p$ the pressure, $\gamma$ the gas constant, and $A>0$ is a function of entropy.
 
 ![Gif](https://users.flatironinstitute.org/~polymathic/data/the_well/datasets/euler_multi_quadrants_periodicBC/gif/density_normalized.gif)
 
-| Dataset    | FNO | TFNO  | Unet | CNextU-net
-|:-:|:-:|:-:|:-:|:-:|
-| `euler_multi-quadrants_periodicBC`  | 2.22  | 2.19 |$\mathbf{1.98}$ |2.26|
 
 # About the data
 
@@ -50,11 +46,11 @@ with $\rho$ the density, $u$ and $v$ the $x$ and $y$ velocity components, $e$ th
 
 **Total time range ($t_{min}$ to $t_{max}$):** $t_{min} = 0$, $t_{max}=1.5s$.
 
-**Spatial domain size ($L_x$, $L_y$, $L_z$):** $L_x = 1$ and  $L_y = 1$.
+**Spatial domain size ($L_x$, $L_y$):** $L_x = 1$ and  $L_y = 1$.
 
-**Set of coefficients or non-dimensional parameters evaluated:** all combinations of $\gamma$ constant of the gas at a certain temperature: $\gamma=${1.3,1.4,1.13,1.22,1.33,1.76, 1.365,1.404,1.453,1.597} and boundary conditions: {extrap, periodic}.
+**Set of coefficients or non-dimensional parameters evaluated:** all combinations of $\gamma$ constant of the gas at a certain temperature: $\gamma=${1.13,1.22,1.3,1.33,1.365,1.4,1.404,1.453,1.597,1.76} and boundary conditions: {extrap, periodic}.
 
-**Approximate time to generate the data:** 80 hours on 160 CPU cores for all data.
+**Approximate time to generate the data:** 80 hours on 160 CPU cores for all data (periodic and open BC).
 
 **Hardware used to generate the data and precision used for generating the data:** Icelake nodes, double precision.
 

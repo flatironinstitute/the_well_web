@@ -1,4 +1,4 @@
-# `post_neutron_star_merger` - aftermath of the merger of two neutron stars
+# Post neutron star merger
 
 **One line description of the data:** Simulations of the aftermath of a neutron star merger.
 
@@ -15,16 +15,16 @@
 The fluid sector consists of the following system of equations.
 
 
-\begin{eqnarray}
+\begin{align}
   \partial_t \left(\sqrt{g}\rho_0 u^t\right) + \partial_i\left(\sqrt{g}\rho_0u^i\right)
-  &=& 0\\
+  &= 0\\
   \partial_t\left[\sqrt{g} \left(T^t_{\ \nu} + \rho_0u^t \delta^t_\nu\right)\right]
   + \partial_i\left[\sqrt{g}\left(T^i_{\ \nu} + \rho_0 u^i \delta^t_\nu\right)\right]
-  &=& \sqrt{g} \left(T^\kappa_{\ \lambda} \Gamma^\lambda_{\nu\kappa} + G_\nu\right)\ \forall \nu = 0,1,\ldots,4\\
-  \partial_t \left(\sqrt{g} B^i\right) + \partial_j \left[\sqrt{g}\left(b^ju^i - b^i u^j\right)\right] &=& 0\\
+  &= \sqrt{g} \left(T^\kappa_{\ \lambda} \Gamma^\lambda_{\nu\kappa} + G_\nu\right)\,\,\,\, \forall \nu = 0,1,\ldots,4\\
+  \partial_t \left(\sqrt{g} B^i\right) + \partial_j \left[\sqrt{g}\left(b^ju^i - b^i u^j\right)\right] &= 0\\
   \partial_t\left(\sqrt{g}\rho_0 Y_e u^t\right) + \partial_i\left(\sqrt{g}\rho_0Y_eu^i\right)
-  &=& \sqrt{g} G_{\text{ye}}\\
-\end{eqnarray}
+  &= \sqrt{g} G_{\text{ye}}\\
+\end{align}
 
 
 The standard radiative transfer equation is
@@ -34,27 +34,25 @@ The standard radiative transfer equation is
 \end{equation}
 
 
-<div style="transform: rotate(90deg);">
-  <img src="https://users.flatironinstitute.org/~polymathic/data/the_well/datasets/post_neutron_star_merger/gif/Ye_normalized.gif" alt="Rotated GIF">
-</div>
+<p align="center"> <img src="https://users.flatironinstitute.org/~polymathic/data/the_well/datasets/post_neutron_star_merger/gif/Ye_good_normalized.gif" width="50%"></p>
+
+
 
 
 | Dataset    | FNO | TFNO  | Unet | CNextU-net
 |:-:|:-:|:-:|:-:|:-:|
-| `post_neutron_star_merger`  | 1380 | 337 | - |-|
+| `post_neutron_star_merger`  | 0.3866 | $\mathbf{0.3793}$ | - |-|
 
-Preliminary benchmarking, in VRMSE. Unet and CNextU-net results are not available as these architectures needs all dimensions of the data to be multiples of 2.
+Table: VRMSE metrics on test sets (lower is better). Best results are shown in bold. VRMSE is scaled such that predicting the mean value of the target field results in a score of 1. Unet and CNextU-net results are not available as these architectures require all the dimensions of the data to be multiples of 2.
 
 
-# About the data 
+# About the data
 
-**Dimension of discretized data:** 181 time-steps of $192 \times 128 \times 66$ snapshots.
+**Dimension of discretized data:** 181 time-steps of 192 $\times$ 128 $\times$ 66 snapshots.
 
-**Fields available in the data:** fluid density (scalar field), fluid internal energy (scalar field), electron fraction (scalar field), temperate (scalar field), entropy (scalar field), velocity (vector field), magnetic field (vector field), contravariant tensor metric of space-time (tensor field, no time-dependency).
-A description of fields available in an output file can be found [here](
-https://github.com/lanl/nubhlight/wiki).
+**Fields available in the data:** fluid density (scalar field), fluid internal energy (scalar field), electron fraction (scalar field), temperate (scalar field), entropy (scalar field), velocity (vector field), magnetic field (vector field), contravariant tensor metric of space-time (tensor field, no time-dependency). A description of fields available in an output file can be found [here](https://github.com/lanl/nubhlight/wiki).
 
-**Number of trajectories:** 8 full simulations. 
+**Number of trajectories:** 8 full simulations.
 
 **Size of the ensemble of all simulations:** 110.1 GB.
 
@@ -70,7 +68,7 @@ https://github.com/lanl/nubhlight/wiki).
 
 **Total time range ($t_{min}$ to $t_{max}$):** 10000 in code units. Physical time varies; roughly 127 milliseocnds for fudicial model
 
-**Spatial domain size ($L_x$, $L_y$, $L_z$):** Spherical coordinates. Radius roughly 2 to 1000 in code units. Physical values vary. Outer boundary is at roughly 4000 for fiducial model. Polar angle 0 to pi. Azimuthal angle 0 to 2*pi. Note that the coordinates are curvilinear. In Cartesian space, spacing is logarithmic in radius and there is a focusing of grid lines near the equator.
+**Spatial domain size:** Spherical coordinates. Radius roughly 2 to 1000 in code units. Physical values vary. Outer boundary is at roughly 4000 for fiducial model. Polar angle 0 to pi. Azimuthal angle 0 to 2*pi. Note that the coordinates are curvilinear. In Cartesian space, spacing is logarithmic in radius and there is a focusing of grid lines near the equator.
 
 **Set of coefficients or non-dimensional parameters evaluated:** Black hole spin parameter a, ranges 0 to 1. Initial mass and angular momentum of torus. In dimensionless units, evaluated as inner radius Rin and radius of maximum pressure Rmax. Torus initial electron fraction Ye and entropy kb. Black hole mass in solar masses.
 
@@ -98,7 +96,7 @@ The core quantity that describes the curvature of spacetime and its
 impact on a simulation is `['t0_fields']['gcon']` of the HDF5 file. From this, other quantities can be computed.
 
 ## To reproduce
-The values in `simulation_parameters.json` (on the Github page the Well) are sufficient to reproduce a
+The values in `simulation_parameters.json` are sufficient to reproduce a
 simulation using [nubhlight](https://github.com/lanl/nubhlight) using
 the `torus_cbc` problem generator, with one exception. You must
 provide tabulated equation of state and opacity data. We use the SFHo
@@ -135,7 +133,7 @@ Here we include, for completeness, a description of the different simulation par
 - `TEMP_unit`, temperature unit. Converts from MeV (code units) to Kelvin.
 - `T_unit`, time unit. Converts from code units to seconds.
 - `U_unit`, energy density unit. Multiplying code quantity by `U_unit` converts it into units of erg/cm^3.
-- `a`, dimensionless black hole spin. 
+- `a`, dimensionless black hole spin.
 - `cour`, dimensionless CFL factor used to set the timestep based on the grid spacing.
 - `dx`, array of grid spacing in code coordinates. (Uniform.)
 - `maxnscatt`, maximum number of scattering events per superphoton particle
