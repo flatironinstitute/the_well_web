@@ -8,7 +8,7 @@
 
 **Associated paper**: [Paper](https://iopscience.iop.org/article/10.3847/1538-4357/abc484/pdf)
 
-**Domain expert**: [Blakesley Burkhart](https://www.bburkhart.com/), CCA, Flatiron Institute & Rutgers University.
+**Domain expert**: [Blakesley Burkhart](https://www.bburkhart.com/), Flatiron Institute & Rutgers University.
 
 **Code or software used to generate the data**: Fortran + MPI.
 

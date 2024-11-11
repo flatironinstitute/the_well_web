@@ -2,7 +2,7 @@ site_name: The Well
 theme:
   name: material
   palette:
-    - primary: blue
+    - primary: black
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -31,11 +31,11 @@ theme:
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
-  - Tutorials:
+  - Tutorial:
       - Interface: tutorials/dataset.ipynb
   - Tools: tools.md
   - Benchmarks: benchmarks.md
-  - Simulations:
+  - Datasets:
       - Overview: datasets_overview.md
       - acoustic_scattering_discontinuous: descriptions/acoustic_scattering_discontinuous.md
       - acoustic_scattering_inclusions: descriptions/acoustic_scattering_inclusions.md
