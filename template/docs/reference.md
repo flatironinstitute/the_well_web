@@ -91,7 +91,7 @@ root: Group
 
 ## Data Classes
 
-The Well provides two main class `WellDataset` and `WellDataModule` to handle the raw data that are stored in `.hdf5` files.
+The Well provides two main class `WellDataset` and `WellDataModule` to handle the raw data that are stored in `.hdf5` files. The [tutorial](tutorials/dataset.ipynb) provides a guide on how to use these classes in a training pipeline.
 
 ### Dataset
 
