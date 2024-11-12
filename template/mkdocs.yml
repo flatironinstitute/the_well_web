@@ -33,7 +33,7 @@ nav:
   - Getting Started: getting_started.md
   - Tutorial:
       - Interface: tutorials/dataset.ipynb
-  - Tools: tools.md
+  - Reference: reference.md
   - Benchmarks: benchmarks.md
   - Datasets:
       - Overview: datasets_overview.md
@@ -93,3 +93,10 @@ markdown_extensions:
 plugins:
   - mkdocs-jupyter
   - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths:
+            ../../the_well/
+          options:
+            docstring_style: google
