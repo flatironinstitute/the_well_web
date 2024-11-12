@@ -2,20 +2,7 @@ site_name: The Well
 theme:
   name: material
   palette:
-    - primary: black
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
+    scheme: the_well
   features:
     #- navigation.expand
     - navigation.tabs
@@ -76,6 +63,7 @@ repo_name: the_well
 
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
+  - css/extra.css
 
 extra_javascript:
   - javascript/katex.js
