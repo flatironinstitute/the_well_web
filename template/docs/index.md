@@ -1,10 +1,9 @@
 <head>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 
-# <span style="font-family: Montserrat;">The Well: a collection of diverse physics numerical simulations</span>
+# The Well: a collection of diverse physics numerical simulations</span>
 
 <!-- <div class="video-container">
   <video autoplay loop muted playsinline class="background-video">
