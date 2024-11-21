@@ -5,6 +5,7 @@ theme:
     scheme: the_well
   features:
     #- navigation.expand
+    - content.code.copy
     - navigation.tabs
     - navigation.tabs.sticky
     - search.suggest  # Enables search suggestion
@@ -17,11 +18,9 @@ theme:
 
 nav:
   - Home: index.md
-  - Getting Started: getting_started.md
+  # - Getting Started: getting_started.md
   - Tutorial:
       - Interface: tutorials/dataset.ipynb
-  - Reference: reference.md
-  - Benchmarks: benchmarks.md
   - Datasets:
       - Overview: datasets_overview.md
       - acoustic_scattering_discontinuous: descriptions/acoustic_scattering_discontinuous.md
@@ -46,6 +45,8 @@ nav:
       - turbulent_radiative_layer_2D: descriptions/turbulent_radiative_layer_2D.md
       - turbulent_radiative_layer_3D: descriptions/turbulent_radiative_layer_3D.md
       - viscoelastic_instability: descriptions/viscoelastic_instability.md
+  - API: API.md
+  - Benchmarks: benchmarks.md
   - Contact: reference_contact.md
 extra:
   social:

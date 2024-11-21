@@ -11,6 +11,18 @@
     overflow-y: auto;
   }
 
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally centers children */
+    text-align: center;  /* Centers text under the icon */
+  }
+
+  .title-icon {
+      width: 60%; /* Adjust as needed */
+      height: auto;
+  }
+
   /* Fullscreen container for the video */
   .video-container {
     position: fixed;
