@@ -1,5 +1,11 @@
+# Note: This historical proof of concept has been superceded
+
+The officially released version is here: 
+<a href="https://github.com/PolymathicAI/the_well/tree/master/docs">https://github.com/PolymathicAI/the_well/tree/master/docs</a>.
+
+
 # the_well_web
-Tools for building a website featuring visualizations from polymathic/the_well
+Proof of concept tools for building a website featuring visualizations from polymathic/the_well
 -- 
 <a href="https://thewell.flatironinstitute.org/">https://thewell.flatironinstitute.org/</a>.
 
